@@ -1,7 +1,5 @@
 
 # StudyNotion - EdTech Platform
-:rocket: [Link to website][https://studynotion-frontend.vercel.app/]
-
 
 ![Main Page](images/mainpage.png)
 
@@ -109,26 +107,31 @@ For detailed API documentation and endpoints, refer to the [API Documentation](/
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/username/repo.git`
-2. Navigate to the project directory: `cd StudyNotion`
-3. Install dependencies: `npm install`
+1. Clone the repository to your local machine.
+    ```sh
+    git clone https://github.com/sonu-kumar9113/Study-Notion.git
+    ```
 
-## Configuration
+2. Install the required packages.
+    ```sh
+    cd Study-Notion-master
+    npm install
+    
+    cd server
+    npm install
+    ```
 
-1. Set up a MongoDB database and obtain the connection URL.
-2. Create a `.env` file in the root directory with the following environment variables:
-   ```
-   MONGODB_URI=<your-mongodb-connection-url>
-   JWT_SECRET=<your-jwt-secret-key>
-   ```
+3. Set up the environment variables:
 
-## Usage
-
-1. Start the server: `npm start`
-2. Open a new terminal and navigate to the `client` directory: `cd client`
-3. Start the React development server: `npm start`
-
-Access the application in your browser at `http://localhost:3000`.
+   Create a .env file in the root directory and /server
+   Add the required environment variables, such as database connection details, JWT secret, and any other necessary configurations check .env.example files for more info.
 
 
+4. Start the development server.
+    ```sh
+    npm run dev
+    ```
 
+5. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000/) to view your project.
+
+The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
